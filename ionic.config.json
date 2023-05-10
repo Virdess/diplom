@@ -1,0 +1,7 @@
+{
+  "name": "shop_dipl",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}
