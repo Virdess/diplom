@@ -22,8 +22,12 @@
         <ion-card-content>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic alias dolor, voluptatum qui quia.
         </ion-card-content>
-        <ion-button fill="clear" style="height: auto ;"><img src="/icons8-корзина-50.png" alt="" style="width: 60%;"></ion-button>
-        <ion-button fill="solid" color="dark">Подробнее</ion-button>
+        <ion-button fill="clear" style="height: auto ;">
+          <img src="/icons8-корзина-50.png" alt="" style="width: 60%;">
+        </ion-button>
+        <ion-button fill="solid" color="dark" href="/product">
+          Подробнее
+        </ion-button>
       </ion-card>
       <ion-card color="warning">
         <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
@@ -38,8 +42,12 @@
         <ion-card-content>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic alias dolor, voluptatum qui quia.
         </ion-card-content>
-        <ion-button fill="clear" style="height: auto ;"><img src="/icons8-корзина-50.png" alt="" style="width: 60%;"></ion-button>
-        <ion-button fill="solid" color="dark">Подробнее</ion-button>
+        <ion-button fill="clear" style="height: auto ;">
+          <img src="/icons8-корзина-50.png" alt="" style="width: 60%;">
+        </ion-button>
+        <ion-button fill="solid" color="dark" href="/product">
+          Подробнее
+        </ion-button>
       </ion-card>
       <ion-card color="danger">
         <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
@@ -54,8 +62,9 @@
         <ion-card-content>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic alias dolor, voluptatum qui quia.
         </ion-card-content>
-        <ion-button fill="clear" style="height: auto ;"><img src="/icons8-корзина-50.png" alt="" style="width: 60%;"></ion-button>
-        <ion-button fill="solid" color="dark">Подробнее</ion-button>
+        <ion-button fill="clear" style="height: auto ;"><img src="/icons8-корзина-50.png" alt=""
+            style="width: 60%;"></ion-button>
+        <ion-button fill="solid" color="dark" href="/product">Подробнее</ion-button>
       </ion-card>
     </ion-content>
   </ion-page>

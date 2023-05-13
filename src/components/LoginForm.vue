@@ -1,5 +1,5 @@
 <template>
-    <ion-list>
+    <ion-list style="padding: 10px; margin: auto 0;">
         <ion-input ref="input" type="email" fill="solid" label="Email" label-placement="floating"
             helper-text="Enter a valid email" error-text="Invalid email" @ionInput="validate"
             @ionBlur="markTouched"></ion-input>
