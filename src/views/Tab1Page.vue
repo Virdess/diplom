@@ -1,3 +1,13 @@
+<script setup lang="ts">
+import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonButton, IonIcon, IonFab, IonFabButton } from '@ionic/vue';
+
+let itemsInBasket = 0;
+
+function addProd(){
+  itemsInBasket++
+}
+</script>
+
 <template>
   <ion-page>
     <ion-header>
@@ -6,6 +16,11 @@
       </ion-toolbar>
     </ion-header>
     <ion-content :fullscreen="true">
+      <ion-fab>
+        <ion-fab-button>
+          <b>{{ itemsInBasket }}</b>
+        </ion-fab-button>
+      </ion-fab>
       <ion-title style="margin-top: 10px;">
         Товары недели:
       </ion-title>
@@ -22,9 +37,9 @@
         <ion-card-content>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione hic alias dolor, voluptatum qui quia.
         </ion-card-content>
-        <ion-button fill="clear" style="height: auto ;">
+        <ion-button fill="clear" style="height: auto ;" @click="itemsInBasket++">
           <img src="/icons8-корзина-50.png" alt="" style="width: 60%;">
-        </ion-button>
+        </ion-button> 
         <ion-button fill="solid" color="dark" href="/product">
           Подробнее
         </ion-button>
@@ -70,7 +85,12 @@
   </ion-page>
 </template>
 
-<script setup lang="ts">
-import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonButton } from '@ionic/vue';
-import ExploreContainer from '@/components/ExploreContainer.vue';
-</script>
+
+
+<style>
+ion-fab{
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+</style>
