@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonCard, IonCardSubtitle, IonCardTitle, IonCardContent, IonCardHeader, IonButton, IonIcon, IonFab, IonFabButton } from '@ionic/vue';
 
-let itemsInBasket = 0;
 
-function addProd(){
-  itemsInBasket++
+</script>
+
+<script lang="ts">
+export default{
+  data(){
+    return{
+      itemsInBasket:0
+    }
+  }
 }
 </script>
 
