@@ -32,5 +32,5 @@ import ExploreContainer from '@/components/ExploreContainer.vue';
 import { RouterLink } from 'vue-router';
 import router from '../router'
 
-let categories = ['Футболки', 'Кофты', 'Рубашки', 'Поло', 'Носки', 'Штаны', 'Трусы', 'Шапки']
+let categories = ['Футболки', 'Кофты', 'Рубашки', 'Поло', 'Носки', 'Штаны', 'Нижнее бельё', 'Шапки']
 </script>
