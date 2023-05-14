@@ -19,7 +19,7 @@
           <ion-item slot="header" color="light">
             <ion-label>{{cat}}</ion-label>
           </ion-item>
-          <div class="ion-padding" slot="content" v-for="subcat in categories">Подкатегория {{ categories.indexOf(subcat) + 1 }}</div>
+          <div class="ion-padding" slot="content" v-for="subcat in categories"><router-link :to="{ name: 'ProductsList', params: { id: categories.indexOf(subcat) + 1 } }">Подкатегория {{ categories.indexOf(subcat) + 1 }}</router-link></div>
         </ion-accordion>
       </ion-accordion-group>
     </ion-content>
@@ -29,6 +29,8 @@
 <script setup lang="ts">
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent, IonAccordion, IonAccordionGroup, IonItem, IonLabel } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
+import { RouterLink } from 'vue-router';
+import router from '../router'
 
 let categories = ['Футболки', 'Кофты', 'Рубашки', 'Поло', 'Носки', 'Штаны', 'Трусы', 'Шапки']
 </script>

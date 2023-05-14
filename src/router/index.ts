@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from '@ionic/vue-router';
 import { RouteRecordRaw } from 'vue-router';
-import TabsPage from '../views/TabsPage.vue'
-import LoginPage from '../views/LoginPage.vue'
+import TabsPage from '@/views/TabsPage.vue'
+import LoginPage from '@/views/LoginPage.vue'
+import ProductPage from '@/views/ProductPage/ProductPage.vue'
+import ProductsList from '@/views/ProductPage/ProductsList.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -18,7 +20,7 @@ const routes: Array<RouteRecordRaw> = [
       },
       {
         path: 'tab1',
-        component: () => import('@/views/Tab1Page.vue')
+        component: () => import('@/views/Tab1Page.vue'),
       },
       {
         path: 'tab2',
@@ -28,15 +30,22 @@ const routes: Array<RouteRecordRaw> = [
         path: 'tab3',
         component: () => import('@/views/Tab3Page.vue')
       }
-    ]
+    ],
+    name:'Tabs'
   },
   {
     path: '/login',
     component:LoginPage
   },
   {
-    path:'/product',
-    component: () => import('@/views/ProductPage/ProductPage.vue')
+    path:'/product/:price',
+    name:'ProductPage',
+    component: ProductPage
+  },
+  {
+    path:'/product/list/:id',
+    name:'ProductsList',
+    component:ProductsList
   }
 ]
 
